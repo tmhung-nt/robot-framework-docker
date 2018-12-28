@@ -3,7 +3,7 @@
 docker run --rm \
            -e USERNAME="Ipatios Asmanidis" \
            --net=host \
-           -e ACCESS_TOKEN=${ACCESS_TOKEN}
+           -e ACCESS_TOKEN=${ACCESS_TOKEN} \
            -v "$PWD/output":/output \
            -v "$PWD/suites":/suites \
            -v "$PWD/scripts":/scripts \
