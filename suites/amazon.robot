@@ -28,7 +28,7 @@ the user can proceed with the Checkout
     Capture Page Screenshot
     
 Open Chrome Browser
-    ${options}  Evaluate sys.modules['selenium.webdriver'].ChromeOptions()  sys,  selenium.webdriver
+    ${options}  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
     Call Method  ${options}  add_argument  --no-sandbox
     ${prefs}    Create Dictionary    download.default_directory=/tmp
     Call Method    ${options}    add_experimental_option    prefs     ${prefs}
